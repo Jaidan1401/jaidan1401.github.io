@@ -10,6 +10,7 @@ for (const project of projectsToDisplay) {
     projectDisplay.querySelector(".projectPreviewName").textContent = data.name;
     projectDisplay.querySelector(".projectPreviewButton").href = data.link;
     projectDisplay.querySelector(".projectPreviewImage").src = data.preview;
+    projectDisplay.querySelector(".projectPreviewImage").poster = data.poster;
     projectDisplay.querySelector(".projectPreviewEngine").textContent = data.tags[0];
     projectDisplay.querySelector(".projectPreviewLanguage").textContent = data.tags[1];
     projectDisplay.querySelector(".projectPreviewDimension").textContent = data.tags[2];
