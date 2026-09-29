@@ -61,7 +61,7 @@ section {
     padding-bottom: 30px;
 }
 section div {
-    max-width: 50vw;
+    max-width: 60vw;
     margin: 0 auto;
 }
 hr {
@@ -141,6 +141,15 @@ a:hover {
 }
 
 @media (max-aspect-ratio: 4/3) {
+    section div {
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+    .description {
+        max-width: 75vw;
+        margin: 0 auto;
+    }
+    
     /* Project Page */
     .projectShowcase {
         grid-template-columns: 1fr;
@@ -150,5 +159,11 @@ a:hover {
     }
     .projectShowcasePage {
         grid-template-columns: 1fr;
+    }
+    .projectSection {
+        display: grid;
+    }
+    .projectSection iframe {
+        width: 100%;
     }
 }
