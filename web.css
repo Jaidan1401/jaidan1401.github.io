@@ -139,6 +139,10 @@ a:hover {
     width: 50%;
     aspect-ratio: 16 / 9;
 }
+video {
+    width: 512px;
+    height: 288px;
+}
 
 @media (max-aspect-ratio: 4/3) {
     section div {
@@ -148,6 +152,11 @@ a:hover {
     .description {
         max-width: 75vw;
         margin: 0 auto;
+    }
+    video {
+        width: 100%;
+        height: auto;
+        max-width: 512px;
     }
     
     /* Project Page */
