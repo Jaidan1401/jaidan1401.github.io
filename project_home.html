@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Projects</title>
+        <link rel="stylesheet" href="web.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <body>
+        <nav>
+            <a href="index.html#overview"><span>Overview</span></a>
+            <a href="index.html#projects"><span>Projects</span></a>
+            <a href="index.html#skills"><span>Skills</span></a>
+            <a href="index.html#connect"><span>Connect</span></a>
+        </nav>
+        
+        <main>
+            <section class="projectBack">
+                <div>
+                    <h1>Projects</h1>
+                    <h2>Sorted by most recent</h2>
+                    <br>
+
+                    <template id="projectTemplate">
+                        <div class="projectPreview">
+                            <a class="projectPreviewButton" href="">
+                                <video
+                                        class="projectPreviewImage"
+                                        src=""
+                                        width="512"
+                                        height="288"
+                                        muted
+                                        loop
+                                        playsinline
+                                ></video>
+
+                                <h3 class="projectPreviewName"></h3>
+                            </a>
+
+                            <div class="tags">
+                                <span class="projectPreviewEngine">Engine</span>
+                                <span class="projectPreviewLanguage">Language</span>
+                                <span class="projectPreviewDimension">Dimension</span>
+                            </div>
+                        </div>
+                    </template>
+
+                    <div class="projectShowcasePage" id="projectShowcase">
+                        <div class="projectPreview" data-project="frame_by_frame"></div>
+                        <div class="projectPreview" data-project="deltarune_recreation"></div>
+                        <div class="projectPreview" data-project="project_rainstorm"></div>
+                        <div class="projectPreview" data-project="robocide"></div>
+                        <div class="projectPreview" data-project="duality_jam"></div>
+                        <div class="projectPreview" data-project="avaritia"></div>
+                        <div class="projectPreview" data-project="freighter_firefight"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="projects.js"></script>
+        <script src="project_display.js"></script>
+    </body>
+</html>

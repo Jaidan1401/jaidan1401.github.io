@@ -1,1 +1,98 @@
+<!DOCTYPE html>
 
+<html lang="en">
+    <head>
+        <title>Jaidan Lee - Game Design & Programming Student</title>
+        <link rel="stylesheet" href="web.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <body>
+        <nav>
+            <a href="#overview"><span>Overview</span></a>
+            <a href="#projects"><span>Projects</span></a>
+            <a href="#skills"><span>Skills</span></a>
+            <a href="#connect"><span>Connect</span></a>
+        </nav>
+        
+        <main>
+            <section id="overview">
+                <div>
+                    <h1>Jaidan Lee</h1>
+                    <h2>Level 5 Game Design & Programming student @ University of Staffordshire</h2>
+                    <p class="description">I am currently studying Game Design & Programming at University to persue my dream of developing games full-time. I've used multiple engines and languages as a hobbyist, and I'm always looking to gain experience to expand my skillset.</p>
+                    <br>
+                    <br>
+                    <p class="description">Recently, Unity and C# have caught my eye. Since picking it up during one of my modules I adapted to it almost instantly, and it has been my go-to engine since.</p>
+                    <br>
+                    <p class="description">I'm currently learning more about Unreal Engine and how to apply C++ to projects created in it.</p>
+                </div>
+            </section>
+            
+            <hr>
+            
+            <section id="projects">
+                <div>
+                    <h1>Projects</h1>
+                    <h2>Featured</h2>
+                    
+                    <template id="projectTemplate">
+                        <div class="projectPreview">
+                            <a class="projectPreviewButton" href="">
+                                <video
+                                        class="projectPreviewImage"
+                                        src=""
+                                        width="512"
+                                        height="288"
+                                        muted
+                                        loop
+                                        playsinline
+                                ></video>
+
+                                <h3 class="projectPreviewName"></h3>
+                            </a>
+
+                            <div class="tags">
+                                <span class="projectPreviewEngine">Engine</span>
+                                <span class="projectPreviewLanguage">Language</span>
+                                <span class="projectPreviewDimension">Dimension</span>
+                            </div>
+                        </div>
+                    </template>
+                    
+                    <div class="projectShowcase" id="projectShowcase">
+                        <div class="projectPreview" data-project="deltarune_recreation"></div>
+                        <div class="projectPreview" data-project="robocide"></div>
+                        <div class="projectPreview" data-project="project_rainstorm"></div>
+                    </div>
+                    <br>
+                    
+                    <a href="project_home.html"><h3>View All</h3></a>
+                    <br>
+                </div>
+            </section>
+
+            <hr>
+            
+            <section id="skills">
+                <div>
+                    <h1>Skills</h1>
+                    <h2>(Currently a work in progress, come back later!)</h2>
+                </div>
+            </section>
+
+            <hr>
+            
+            <section id="connect">
+                <div>
+                    <h1>Connect</h1>
+                    <a href="mailto:jaidan1401@gmail.com">Email</a>
+                </div>
+            </section>
+        </main>
+    
+        <script src="projects.js"></script>
+        <script src="project_display.js"></script>
+    </body>
+</html>

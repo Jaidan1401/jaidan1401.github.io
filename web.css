@@ -1,1 +1,141 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    /* Page */
+    background: linear-gradient(#0c1431ff, #19385bff);
+    margin: 0;
+    
+    /* Text */
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: rgb(214 230 255 / 0.6);
+}
+/* Navigation */
+nav {
+    text-align: center;
+    background-color: rgb(0 0 0 / 0.2);
+    padding: 16px;
+}
+nav a {
+    text-decoration: none;
+    letter-spacing: 0.25px;
+    color: rgb(214 230 255 / 0.8);
+    padding: 8px;
+}
+nav a:hover {
+    color: rgb(214 230 255);
+    letter-spacing: 0.75px;
+    
+    transition:
+        letter-spacing 0.25s;
+}
+nav a span {
+    display: inline-block;
+}
+nav a:hover span {
+    transform: scale(110%);
 
+    transition:
+            transform 0.25s;
+}
+/* Everything else */
+h1 {
+    color: rgb(214 230 255);
+    text-align: center;
+    margin: 0;
+}
+h2 {
+    color: rgb(214 230 255 / 0.4);
+    text-align: center;
+    font-weight: normal;
+}
+h3 {
+    text-align: center;
+}
+section {
+    min-height: 25vh;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+section div {
+    max-width: 50vw;
+    margin: 0 auto;
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgb(0 0 0 / 0.3);
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    letter-spacing: 0.25px;
+    color: rgb(214 230 255 / 0.8);
+}
+a:hover {
+    color: rgb(214 230 255);
+    letter-spacing: 0.5px;
+
+    transition:
+            letter-spacing 0.25s;
+}
+.description {
+    max-width: 30vw;
+    margin: 0 auto;
+}
+
+#projects {
+    background-color: rgb(0 0 0 / 0.15);
+}
+#connect {
+    background-color: rgb(0 0 0 / 0.15);
+}
+
+.tags {
+    margin: 20px;
+    text-align: center;
+}
+.tags span {
+    background-color: rgb(0 0 0 / 0.3);
+    border-radius: 12px;
+    font-weight: bold;
+    padding: 8px 16px;
+}
+/* Project Page */
+.projectShowcase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projectShowcasePage {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+.projectPreview {
+    text-align: center;
+    max-width: 30vw;
+    margin: 10px;
+}
+.projectBack {
+    min-height: 100vh;
+}
+.projectBack div {
+    max-width: 75vw;
+}
+.projectSection {
+    display: flex;
+    gap: 30px;
+}
+.projectDescription {
+    flex: 1;
+}
+.projectSection iframe {
+    flex: 1;
+    width: 50%;
+    aspect-ratio: 16 / 9;
+}
