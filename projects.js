@@ -7,7 +7,7 @@ const projects = {
     },
     
     "frame_by_frame": {
-        name: "Frame-by-Frame Fighter [WIP]",
+        name: "Frame-by-Frame Fighter",
         preview: "images/frame_by_frame/preview.mp4",
         tags: ["Unity", "C#", "2D"],
         link: "projects/frame_by_frame.html"
