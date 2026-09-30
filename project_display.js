@@ -85,10 +85,8 @@ function DisplayFeaturedProjects() {
     }
 }
 
-// Find the page file name to check whether to use DisplayProjects or DisplayFeaturedProjects
-let path = window.location.pathname;
-let page = path.split("/").pop();
-if (page === "index.html") {
+// Rough fix to get both featured projects and all projects to work, might be redone later
+if (document.getElementById("resetFilter") == null) {
     DisplayFeaturedProjects();
 } else {
     document.getElementById("resetFilter").addEventListener("click", () => SetFilter(""));
