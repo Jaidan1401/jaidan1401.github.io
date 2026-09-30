@@ -238,6 +238,9 @@ video {
         grid-template-columns: 1fr;
         max-width: 100vw;
     }
+    .tags {
+        max-width: 100vw;
+    }
     
     /* Project Page */
     .projectShowcase {
