@@ -1,12 +1,4 @@
 const projects = {
-    "template": {
-        name: "Project Name",
-        preview: "images/project_path/preview.mp4",
-        poster: "images/project_path/poster.png",
-        tags: ["Engine", "Language", "Dimension"],
-        link: "projects/project_path.html"
-    },
-    
     "frame_by_frame": {
         name: "Frame-by-Frame Fighter",
         preview: "images/frame_by_frame/preview.mp4",
