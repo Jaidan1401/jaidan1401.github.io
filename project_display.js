@@ -59,13 +59,16 @@ function DisplayProjects() {
     }
     
     // Grab the projects that need displaying and create a preview for them
+    let projectCount = 0;
     for (const id in projects) {
         const data = projects[id];
         
         if (filter === "" || (data.tags.includes(filter))) {
             CreatePreview(data, true);
+            projectCount++;
         }
     }
+    filterText.textContent = filterText.textContent + " (" + projectCount + ")";
 }
 // Displays manually selected FEATURED projects with NO filtering capabilities, intended for the home page
 function DisplayFeaturedProjects() {
